@@ -59,14 +59,6 @@ Schema evolution will be handled by modifying the ingestion script to introduce 
 Time travel will be implemented by allowing the user to specify a date. The backend API will then retrieve the corresponding historical data file from the `data/historical_data/` directory and serve it to the frontend.
 
 
-
-
-## Deployment
-
-The Mini Data Product with Iceberg-like Features has been successfully deployed and is accessible at:
-
-**Public URL:** https://5001-i8kwg6ika3z4otlqiwb1w-75960728.manusvm.computer
-
 ### Features Demonstrated
 
 1. **Data Ingestion**: The application can ingest new stock price data through the "Ingest New Data" button.
