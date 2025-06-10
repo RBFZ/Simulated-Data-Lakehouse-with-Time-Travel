@@ -1,5 +1,4 @@
 # Simulated-Data-Lakehouse-with-Time-Travel
-# Mini Data Product with Iceberg-like Features
 
 ## Project Overview
 
