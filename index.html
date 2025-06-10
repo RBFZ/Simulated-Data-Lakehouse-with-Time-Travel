@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Data Product</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Data Product with Iceberg-like Features</h1>
+
+        <div class="section">
+            <h2>Current Data</h2>
+            <table id="current-data-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be loaded here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Time Travel</h2>
+            <label for="time-travel-date">Select Date:</label>
+            <input type="date" id="time-travel-date">
+            <button id="load-historical-data">Load Data</button>
+            <p id="time-travel-error" class="error-message"></p>
+            <table id="historical-data-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Historical data will be loaded here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Data Ingestion & Schema Evolution</h2>
+            <button id="ingest-data">Ingest New Data</button>
+            <button id="evolve-schema">Evolve Schema (Add Volume)</button>
+            <p id="ingestion-status"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for("static", filename="js/script.js") }}"></script>
+</body>
+</html>
+
